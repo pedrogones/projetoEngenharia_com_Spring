@@ -1,0 +1,58 @@
+<header>
+  <mat-toolbar color="primary" class="custom-toolbar">
+      <button mat-icon-button (click)="toggleMenu()" class="example-icon favorite-icon button-bar">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <button mat-button [matMenuTriggerFor]="menu" #menuButton="matMenuTrigger" class="invisible-button"></button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="redirectHome()">Página Principal</button>
+        <button mat-menu-item>Prontuário Médico</button>
+        <button mat-menu-item>Medicações</button>
+        <button mat-menu-item>Agenda</button>
+        <button mat-menu-item>Contate seu Médico</button>
+        <button mat-menu-item>Item a Decidir</button>
+      </mat-menu>
+      <span class="example-spacer"></span>
+      <span class="example-spacer"></span>
+      <span class="example-spacer title">Login</span>
+      <span class="example-spacer"></span>
+      <button mat-icon-button class="example-icon favorite-icon button-bar" aria-label="Example icon-button with heart icon">
+        <mat-icon>favorite</mat-icon>
+      </button>
+      <button mat-icon-button class="example-icon button-bar" aria-label="Example icon-button with share icon">
+        <mat-icon>share</mat-icon>
+      </button>
+    </mat-toolbar>
+  </header>
+<body>
+  <div class="login-container text-center" card>
+    <div class="login-container">
+      <p-card>
+        <div class="p-grid">
+          <div class="p-col-12">
+            <div class="p-col-12 text-center" >
+              <i class="fa-brands fa-critical-role fa-5x"></i>
+              <h2 class="fontText">
+                Autenticação Clínica
+              </h2>
+            </div>
+            <label for=""> Usuário:</label>
+            <input class="p-col-12" type="text" pInputText [(ngModel)]="usuario" name="usuario"  />
+          </div>
+          <div class="p-col-12">
+            <label for="">Senha:</label>
+            <input class="p-col-12" type="password"  pInputText [(ngModel)]="senha" name="senha"  />
+          </div>
+          <div class="p-col-12">
+            <button pButton type="button" label="Entrar" class="button-anime" (click)="fazerLogin()" ></button>
+          </div>
+          <div class="grid-col-12" style="margin-top: 1em;">
+            <p class="text-anime">Nao possui Login?</p>
+            <button pButton type="button" label="Cadastre-se" class="button-anime" (click)="redirect()"></button>
+          </div>
+        </div>
+      </p-card>
+    </div>
+  </div>
+
+</body>

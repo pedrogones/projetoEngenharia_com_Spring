@@ -1,0 +1,33 @@
+<header>
+  <ng-container *ngIf="str">
+    <mat-card *ngFor="let paciente of str">
+      <mat-card-content>
+      <!-- Formulário de Edição -->
+        <div class="informações">
+          <h1 class="titulo">Prontuário de Paciente</h1>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" [(ngModel)]="paciente.name">
+          <br>
+          <label for="login">Usuário (Login):</label>
+          <input type="text" id="login" name="login" [(ngModel)]="paciente.usuario">
+          <br>
+          <label>Possui alergia?</label>
+          <label for="alergiaSim">Sim</label>
+          <input type="radio" id="alergiaSim" name="alergia" [value]="true" [(ngModel)]="paciente.alergico">
+          <label for="alergiaNao">Não</label>
+          <input type="radio" id="alergiaNao" name="alergia" [value]="false" [(ngModel)]="paciente.alergico">
+          <br>
+          <label for="idade">Idade:</label>
+          <input type="text" id="idade" name="idade" [(ngModel)]="paciente.idade">
+          <br>
+          <label for="contato">Contato:</label>
+          <input type="text" id="contato" name="contato" [(ngModel)]="paciente.contato">
+          <br>
+          <label for="adicionais">Informações adicionais:</label>
+          <input type="text" id="adicionais" name="adicionais" [(ngModel)]="paciente.infoadd">
+          <br>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </ng-container>
+</header>

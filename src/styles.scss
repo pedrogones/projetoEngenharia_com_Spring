@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+
+html { height: 100%; }
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  opacity: 0.95;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4; /* Cor de fundo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("./assets/login_pic.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;}
+
+$background-color: #252525 !important;
+$font-color: #fff !important;
+
+.ui-card{
+  background-color: $background-color;
+  color: $font-color;
+}
+.text-center{
+  text-align: center;
+}
+
+.login-container {
+  background-color: #f2f2f2;
+  opacity: 0.95;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(153, 127, 127, 0.2);
+  text-align: center;
+
+}

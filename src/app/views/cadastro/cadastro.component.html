@@ -1,0 +1,49 @@
+<header>
+  <mat-toolbar color="primary" class="custom-toolbar">
+      <button mat-icon-button (click)="toggleMenu()" class="example-icon favorite-icon button-bar">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <button mat-button [matMenuTriggerFor]="menu" #menuButton="matMenuTrigger" class="invisible-button"></button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="redirectHome()">Página Principal</button>
+        <button mat-menu-item>Prontuário Médico</button>
+        <button mat-menu-item>Medicações</button>
+        <button mat-menu-item>Agenda</button>
+        <button mat-menu-item>Contate seu Médico</button>
+        <button mat-menu-item>Item a Decidir</button>
+      </mat-menu>
+      <span class="example-spacer"></span>
+      <span class="example-spacer"></span>
+      <span class="example-spacer title">Cadastro</span>
+      <span class="example-spacer"></span>
+      <button mat-icon-button class="example-icon favorite-icon button-bar" aria-label="Example icon-button with heart icon">
+        <mat-icon>favorite</mat-icon>
+      </button>
+      <button mat-icon-button class="example-icon button-bar" aria-label="Example icon-button with share icon">
+        <mat-icon>share</mat-icon>
+      </button>
+    </mat-toolbar>
+  </header>
+<div class="login-container">
+  <div class="login-card">
+    <div class="login-input">
+      <label for="nome" class="login-label">Nome:</label>
+      <input type="text" pInputText name="nome" id="nome" [(ngModel)]="nome" class="login-field" />
+      <label for="idade" class="login-label">Idade:</label>
+      <input type="text" pInputText name="idade" id="idade" [(ngModel)]="idade" class="login-field" />
+      <label for="email" class="login-label">E-mail:</label>
+      <input type="text" pInputText name="email" id="email" [(ngModel)]="email" class="login-field" />
+      <label for="usuario" class="login-label">Usuário (para acessar com login):</label>
+      <input type="text" pInputText name="usuario" id="usuario" [(ngModel)]="usuario" class="login-field" />
+      <label for="senha" class="login-label">Senha:</label>
+      <input type="password" pInputText name="senha" id="senha" [(ngModel)]="senha" class="login-field" />
+      <div class="role-labels">
+        <label for="paciente" class="role-label">Paciente<input type="radio" name="role" value="paciente" id="paciente"></label>
+        <label for="medico" class="role-label">Médico<input type="radio" name="role" value="medico" id="medico"></label>
+      </div>
+    </div>
+    <div class="grid-col-12">
+      <button pButton type="button" label="Salvar" class="login-button" (click)="fazerCadastro()"></button>
+    </div>
+  </div>
+</div>

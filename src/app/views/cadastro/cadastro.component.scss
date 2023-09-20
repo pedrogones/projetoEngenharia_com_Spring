@@ -1,0 +1,177 @@
+/* Estilização personalizada para a mat-toolbar */
+.custom-toolbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  /* Centraliza horizontalmente */
+  align-items: center;
+  /* Centraliza verticalmente */
+  height: 64px;
+  /* Altura da barra (ajuste conforme necessário) */
+  background-color: #3157df;
+  /* Cor de fundo da barra (opcional) */
+  color: #fff;
+  /* Cor do texto (opcional) */
+  padding: 0 16px;
+  /* Espaçamento interno (opcional) */
+
+}
+
+.invisible-button {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  border: none;
+}
+
+/* Estilo para o título centralizado */
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.button-bar {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+
+}
+/* Estilo para o cartão de login */
+.login-container {
+  margin-top: 5em;
+
+}
+.login-card {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  margin-top: 1em;
+  display: flex;
+  /* Adiciona display flex */
+  flex-direction: column;
+  /* Alinha os elementos em uma coluna */
+  align-items: center;
+  /* Centraliza verticalmente */
+}
+
+
+/* Estilo para o cabeçalho do formulário */
+.login-header {
+  text-align: center;
+  margin-bottom: 20px;
+  height: auto;
+}
+
+.login-header h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.login-input {
+  align-items: center;
+  width: 400px;
+}
+
+/* Estilo para os rótulos dos campos */
+.login-label {
+  font-weight: bold;
+  color: #555;
+
+}
+
+/* Estilo para os campos de entrada de texto */
+.login-field {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #00ff15;
+  border-radius: 3px;
+  outline: none;
+}
+
+.fontText {
+  font-family: Arial;
+  font-size: 4em;
+}
+
+/* Estilo para o botão de envio */
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Estilo para mensagens de erro */
+.error-message {
+  color: #ff0000;
+  margin-top: 10px;
+}
+
+/* Estilo para o rodapé do formulário */
+.login-footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #777;
+}
+
+.card {
+  margin-top: 4em;
+}
+
+/* Estilização dos rótulos e campos de entrada */
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 90%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #4b4747;
+  border-radius: 3px;
+  outline: none;
+}
+
+/* Estilização do botão (você pode adicionar um botão na seção HTML vazia) */
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.bodyHome {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}

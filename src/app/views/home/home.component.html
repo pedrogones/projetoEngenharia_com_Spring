@@ -1,0 +1,46 @@
+<header>
+  <mat-toolbar color="primary" class="custom-toolbar">
+    <!-- Botão com ícone de menu -->
+    <button mat-icon-button (click)="toggleMenu()" class="example-icon favorite-icon button-bar">
+      <mat-icon>menu</mat-icon>
+    </button>
+
+    <!-- Defina um botão de menu invisível para ativar o menu ao clicar no ícone de menu -->
+    <button mat-button [matMenuTriggerFor]="menu" #menuButton="matMenuTrigger" class="invisible-button"></button>
+
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="redirectHome()">Página Principal</button>
+      <button mat-menu-item>Prontuário Médico</button>
+      <button mat-menu-item>Medicações</button>
+      <button mat-menu-item>Agenda</button>
+      <button mat-menu-item>Contate seu Médico</button>
+      <button mat-menu-item>Item a Decidir</button>
+    </mat-menu>
+    <span class="example-spacer"></span>
+    <span class="example-spacer"></span>
+    <span class="example-spacer title">Home</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon button-bar" aria-label="Example icon-button with heart icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon favorite-icon button-bar" aria-label="Example icon-button with share icon">
+      <mat-icon>share</mat-icon>
+    </button>
+  </mat-toolbar>
+</header>
+
+<body class="bodyHome">
+  <div class="login-container">
+    <div class="login-card">
+      <div class="login-header">
+      </div>
+      <div class="login-input">
+
+        <h1>Agendamento de Consultas e Atendimentos Clínicos</h1>
+        <p>Consultas online e assistência a profissionais de saúde para</p>
+        <p>gerenciar seus horários e pacientes de forma eficiente.</p>
+        <button class="btn-entrar" (click)="redirect()">Entrar</button>
+      </div>
+    </div>
+  </div>
+</body>
