@@ -1,0 +1,4 @@
+o que tem no aplicattion properties deve ser padrão em todos
+
+http://localhost:8080/h2-console/
+link para entrar no adm do banco de dados
